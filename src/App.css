@@ -1,0 +1,7 @@
+.files-dropzone-active {
+  background-color: black;
+}
+
+.files-dropzone-active > * {
+  opacity: 0.6;
+}

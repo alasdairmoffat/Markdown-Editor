@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 import './App.css';
+import AppNavbar from './components/AppNavbar';
 import PreviewWindow from './components/PreviewWindow';
 import EditorWindow from './components/EditorWindow';
 
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <div className="App">
         <Provider store={store}>
+          <AppNavbar />
           <h1>Markdown Editor</h1>
           <hr />
           <EditorWindow />

@@ -1,1 +1,2 @@
 export const UPDATE_MARKDOWN = 'UPDATE_MARKDOWN';
+export const LOAD_FROM_FILE = 'LOAD_FROM_FILE';

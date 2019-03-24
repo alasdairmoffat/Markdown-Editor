@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import { updateMarkdown } from '../store/actions/markdownActions';
 import { FormGroup, Label, Input } from 'reactstrap';
+import FileUpload from './FileUpload';
 
 export class EditorWindow extends Component {
   static propTypes = {
@@ -24,13 +25,15 @@ export class EditorWindow extends Component {
       <div>
         <FormGroup>
           <Label for="markdownInput">Markdown Input</Label>
-          <Input
-            type="textarea"
-            name="text"
-            id="markdownInput"
-            value={markdown}
-            onChange={this.onChange}
-          />
+          <FileUpload clickable={false}>
+            <Input
+              type="textarea"
+              name="text"
+              id="markdownInput"
+              value={markdown}
+              onChange={this.onChange}
+            />
+          </FileUpload>
         </FormGroup>
       </div>
     );
