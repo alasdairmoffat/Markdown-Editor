@@ -1,7 +1,8 @@
 import { UPDATE_MARKDOWN, LOAD_FROM_FILE } from '../actions/types';
 
 const initialState = {
-  markdown: '# Marked in browser\n\nRendered by **marked**.',
+  markdown:
+    'Enter Markdown \n===========\n Either\n - **Type**\n - **Load File** from the menu\n - Drag and drop **.md** file',
 };
 
 export default (state = initialState, action) => {

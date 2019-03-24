@@ -9,6 +9,7 @@ import './App.css';
 import AppNavbar from './components/AppNavbar';
 import PreviewWindow from './components/PreviewWindow';
 import EditorWindow from './components/EditorWindow';
+import FileUpload from './components/FileUpload';
 
 class App extends Component {
   render() {
@@ -17,14 +18,16 @@ class App extends Component {
         <Provider store={store}>
           <AppNavbar />
           <Container fluid>
-            <Row>
-              <Col sm>
-                <EditorWindow />
-              </Col>
-              <Col sm>
-                <PreviewWindow />
-              </Col>
-            </Row>
+            <FileUpload clickable={false}>
+              <Row>
+                <Col sm className="full-height editor">
+                  <EditorWindow />
+                </Col>
+                <Col sm className="full-height preview ">
+                  <PreviewWindow />
+                </Col>
+              </Row>
+            </FileUpload>
           </Container>
         </Provider>
       </div>

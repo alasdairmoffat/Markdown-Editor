@@ -25,19 +25,17 @@ export class FileUpload extends Component {
   render() {
     const { clickable, children } = this.props;
     return (
-      <div>
-        <Files
-          onChange={this.onFilesChange}
-          onError={this.onFilesError}
-          accepts={['.md']}
-          multiple={false}
-          maxFileSize={10000000}
-          minFileSize={0}
-          clickable={clickable}
-        >
-          {children}
-        </Files>
-      </div>
+      <Files
+        onChange={this.onFilesChange}
+        onError={this.onFilesError}
+        accepts={['.md']}
+        multiple={false}
+        maxFileSize={10000000}
+        minFileSize={0}
+        clickable={clickable}
+      >
+        {children}
+      </Files>
     );
   }
 }

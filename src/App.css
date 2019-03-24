@@ -1,7 +1,35 @@
-.files-dropzone-active {
-  background-color: black;
+:root {
+  --box-border: 1px solid #999;
 }
 
-.files-dropzone-active > * {
-  opacity: 0.6;
+.full-height {
+  height: calc(100vh - 80px);
+}
+@media (max-width: 576px) {
+  .full-height {
+    height: calc((100vh - 80px) / 2);
+  }
+}
+
+.preview {
+  overflow-y: scroll;
+  margin: 0 15px;
+  border: var(--box-border);
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+}
+
+.editor textarea {
+  flex-grow: 1;
+  resize: none;
+  overflow-y: scroll;
+  font-family: monospace !important;
+  border: var(--box-border);
+}
+
+.files-dropzone-active * {
+  opacity: 0.8;
 }
