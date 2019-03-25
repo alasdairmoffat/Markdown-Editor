@@ -8,12 +8,16 @@ export const updateMarkdown = markdown => {
 };
 
 export const loadFromFile = file => async dispatch => {
-  const markdown = await readFile(file);
+  try {
+    const markdown = await readFile(file);
 
-  dispatch({
-    type: LOAD_FROM_FILE,
-    markdown,
-  });
+    dispatch({
+      type: LOAD_FROM_FILE,
+      markdown,
+    });
+  } catch (error) {
+    console.log(error.message);
+  }
 };
 
 const readFile = file => {

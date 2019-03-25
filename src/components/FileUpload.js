@@ -3,11 +3,13 @@ import Files from 'react-files';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { loadFromFile } from '../store/actions/markdownActions';
+import { updateError } from '../store/actions/errorActions';
 
 export class FileUpload extends Component {
   static propTypes = {
     clickable: PropTypes.bool,
     loadFromFile: PropTypes.func.isRequired,
+    updateError: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
@@ -18,9 +20,9 @@ export class FileUpload extends Component {
     this.props.loadFromFile(files[0]);
   };
 
-  onFilesError(error, file) {
-    console.log('error code ' + error.code + ': ' + error.message);
-  }
+  onFilesError = error => {
+    this.props.updateError(error);
+  };
 
   render() {
     const { clickable, children } = this.props;
@@ -42,5 +44,5 @@ export class FileUpload extends Component {
 
 export default connect(
   null,
-  { loadFromFile },
+  { loadFromFile, updateError },
 )(FileUpload);

@@ -12,7 +12,7 @@ import {
 import FileUpload from './FileUpload';
 import FileFownload from './FileDownload';
 
-export default class Example extends Component {
+export default class AppNavbar extends Component {
   constructor(props) {
     super(props);
 

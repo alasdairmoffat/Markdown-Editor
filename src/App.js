@@ -10,6 +10,7 @@ import AppNavbar from './components/AppNavbar';
 import PreviewWindow from './components/PreviewWindow';
 import EditorWindow from './components/EditorWindow';
 import FileUpload from './components/FileUpload';
+import ErrorDisplay from './components/ErrorDisplay';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <Provider store={store}>
           <AppNavbar />
           <Container fluid>
+            <ErrorDisplay />
             <FileUpload clickable={false}>
               <Row>
                 <Col sm className="full-height editor">

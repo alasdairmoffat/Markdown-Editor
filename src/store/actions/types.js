@@ -1,2 +1,5 @@
 export const UPDATE_MARKDOWN = 'UPDATE_MARKDOWN';
 export const LOAD_FROM_FILE = 'LOAD_FROM_FILE';
+
+export const UPDATE_ERROR = 'UPDATE_ERROR';
+export const CLEAR_ERROR = 'CLEAR_ERROR';
