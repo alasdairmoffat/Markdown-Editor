@@ -5,6 +5,10 @@ import { PropTypes } from 'prop-types';
 import marked from 'marked';
 import Interweave from 'interweave';
 
+marked.setOptions({
+  gfm: true,
+});
+
 export class PreviewWindow extends Component {
   static propTypes = {
     markdown: PropTypes.string.isRequired,
