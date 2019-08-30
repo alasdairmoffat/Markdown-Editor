@@ -1,0 +1,2 @@
+:root{--box-border:1px solid #999}.full-height{height:calc(100vh - 80px)}@media (max-width:576px){.full-height{height:calc((100vh - 80px)/2)}}.preview{overflow-y:scroll;margin:0 15px;border:1px solid #999;border:var(--box-border)}.editor{display:flex;flex-direction:column}.editor textarea{flex-grow:1;resize:none;overflow-y:scroll;font-family:monospace!important;border:1px solid #999;border:var(--box-border)}.files-dropzone-active *{opacity:.8}
+/*# sourceMappingURL=main.e971ad94.chunk.css.map */
