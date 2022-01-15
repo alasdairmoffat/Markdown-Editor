@@ -1,17 +1,13 @@
 {
   "files": {
-    "main.css": "/Markdown-Editor/static/css/main.e971ad94.chunk.css",
-    "main.js": "/Markdown-Editor/static/js/main.d2a2cd73.chunk.js",
-    "main.js.map": "/Markdown-Editor/static/js/main.d2a2cd73.chunk.js.map",
-    "runtime~main.js": "/Markdown-Editor/static/js/runtime~main.9557f8c9.js",
-    "runtime~main.js.map": "/Markdown-Editor/static/js/runtime~main.9557f8c9.js.map",
-    "static/css/2.1e66eaca.chunk.css": "/Markdown-Editor/static/css/2.1e66eaca.chunk.css",
-    "static/js/2.38de0477.chunk.js": "/Markdown-Editor/static/js/2.38de0477.chunk.js",
-    "static/js/2.38de0477.chunk.js.map": "/Markdown-Editor/static/js/2.38de0477.chunk.js.map",
+    "main.css": "/Markdown-Editor/static/css/main.9ea5f4f8.css",
+    "main.js": "/Markdown-Editor/static/js/main.4a5e9e40.js",
     "index.html": "/Markdown-Editor/index.html",
-    "precache-manifest.053a9c3e2ec4e0a9478d21ef0ec2ee8c.js": "/Markdown-Editor/precache-manifest.053a9c3e2ec4e0a9478d21ef0ec2ee8c.js",
-    "service-worker.js": "/Markdown-Editor/service-worker.js",
-    "static/css/2.1e66eaca.chunk.css.map": "/Markdown-Editor/static/css/2.1e66eaca.chunk.css.map",
-    "static/css/main.e971ad94.chunk.css.map": "/Markdown-Editor/static/css/main.e971ad94.chunk.css.map"
-  }
+    "main.9ea5f4f8.css.map": "/Markdown-Editor/static/css/main.9ea5f4f8.css.map",
+    "main.4a5e9e40.js.map": "/Markdown-Editor/static/js/main.4a5e9e40.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ea5f4f8.css",
+    "static/js/main.4a5e9e40.js"
+  ]
 }
