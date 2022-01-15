@@ -5,7 +5,7 @@ const initialState = {
     'Enter Markdown \n===========\n Either\n - **Type**\n - **Load File** from the menu\n - Drag and drop **.md** file',
 };
 
-export default (state = initialState, action) => {
+export default function markdownReducer(state = initialState, action) {
   switch (action.type) {
     case UPDATE_MARKDOWN:
       return {
@@ -21,4 +21,4 @@ export default (state = initialState, action) => {
     default:
       return state;
   }
-};
+}

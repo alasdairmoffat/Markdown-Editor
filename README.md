@@ -21,10 +21,10 @@ An editor that allows for real time previewing, and loading and saving to and fr
 
 ## Technologies
 
-- React version: 16.8
-- Redux version: 4.0
-- Bootstrap version: 4.3
-- Marked: version: 0.7
+- React
+- Redux
+- Bootstrap
+- Marked
 
 ---
 

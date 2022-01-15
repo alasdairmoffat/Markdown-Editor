@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
 
-import marked from 'marked';
+import { marked } from 'marked';
 import Interweave from 'interweave';
 
 marked.setOptions({
@@ -16,12 +16,12 @@ export class PreviewWindow extends Component {
 
   render() {
     const { markdown } = this.props;
-    const markdownHtml = marked(markdown);
+    const markdownHtml = marked.parse(markdown);
     return <Interweave content={markdownHtml} />;
   }
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   markdown: state.markdown.markdown,
 });
 
